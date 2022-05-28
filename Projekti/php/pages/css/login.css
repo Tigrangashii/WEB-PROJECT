@@ -1,0 +1,82 @@
+main {
+  padding-top: 1rem;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff5454;
+}
+
+.login-form {
+  padding: 1rem;
+  display: grid;
+  grid-auto-rows: 2rem;
+  grid-row-gap: 0.5rem;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form label,
+.login-form input,
+.login-form select {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.login-form input[id*="remmember-me"],
+.login-form input[id*="remmember-me"] + label {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+}
+
+.login-form input,
+.login-form select {
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  background: #d8f3df;
+  border-color: #2ddf5c;
+}
+
+.login-form input[type="checkbox"]:checked {
+  background: #2ddf5c;
+  border: #0e4f1f;
+}
+
+.login-form input.invalid,
+.login-form select.invalid,
+.login-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
+
+.email-error,
+.password-error {
+  visibility: hidden;
+  font-size: 0.8rem;
+  color: red;
+}
+
+@media (min-width: 40rem) {
+  .login-form {
+    margin: auto;
+    width: 35rem;
+    grid-template-columns: 7rem fit-content(18rem) 10rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 0.5rem;
+  }
+
+  .login-form [id="title"] {
+    grid-column: span 2;
+  }
+}

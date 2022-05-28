@@ -1,0 +1,66 @@
+.sidebar {
+  display: inline;
+}
+.sidebar .items {
+  background-color: #0e4f1f;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sidebar .items .item {
+  list-style: none;
+}
+.sidebar .items .item a {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  height: 40px;
+  padding: 0px 0 15px 30px;
+}
+.sidebar .items .item a:hover {
+  color: #2b2626;
+  background-color: white;
+}
+#logout a:hover {
+  background-color: #0e4f1f;
+  color: #ff1b68;
+  text-decoration: underline 2px;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+}
+.logo img {
+  width: 100%;
+}
+
+.section {
+  display: grid;
+  margin-top: 20px;
+  margin-left: 30%;
+  text-align: center;
+  grid-gap: 50px;
+}
+.box-area h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.box-area p {
+  line-height: 2;
+}
+.box-area {
+  width: 75%;
+}

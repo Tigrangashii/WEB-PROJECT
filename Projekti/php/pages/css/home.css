@@ -1,0 +1,197 @@
+#product-overview {
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("../images/freedom.jpg") center/cover no-repeat, #ff1b68;
+  width: 100%;
+  height: 35vh;
+  position: relative;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+  #product-overview {
+    height: 45vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 2rem;
+  }
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+.plan {
+  background: #7dff93;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.plan--highlighted {
+  background: #19b84c;
+  color: white;
+}
+
+.plan__annotation {
+  background: white;
+  color: #19b84c;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
+}
+.plan-button {
+  padding: 12px 20px;
+  border: unset;
+  border-radius: 15px;
+  z-index: 1;
+  color: #212121;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 0.9rem;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 0.25s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.plan-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #0e4f1f;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 0.25s;
+}
+
+.plan-button:hover {
+  color: #e8e8e8;
+}
+
+.plan-button:hover::before {
+  width: 100%;
+}
+.recommend-button:hover::before {
+  background-color: red;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__feature {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan {
+    width: 30%;
+    min-width: 13rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
+    border-radius: 10px;
+    margin: 0 8px;
+    transition: all 0.25s;
+  }
+  .plan:hover {
+    transform: scale(1.05);
+  }
+
+  .plan--highlighted {
+    height: 30rem;
+    z-index: 50;
+  }
+}
+
+#key-features {
+  background: #ff1b68;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 0.5rem 2rem 2rem 2rem;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    width: 30%;
+    max-width: 25rem;
+  }
+
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
+  }
+}

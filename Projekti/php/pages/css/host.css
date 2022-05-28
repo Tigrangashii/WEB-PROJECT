@@ -1,0 +1,46 @@
+.form-inputs {
+  display: flex;
+  align-items: center;
+}
+.saveBtn {
+  margin-left: 20px;
+  width: 60px;
+}
+.domain {
+  height: 1.5rem;
+}
+.plan-select {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.plan-select select {
+  width: 120px;
+  appearance: none;
+  text-align: center;
+}
+.border {
+  border-radius: 5px;
+  border: 1px solid #0e4f1f;
+  margin: 5px;
+}
+
+/* TABLE */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  align-self: center;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

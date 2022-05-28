@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form > div {
+  width: 500px;
+  margin-bottom: 10px;
+}
+.label {
+  display: inline-block;
+  width: 70px;
+}
+.form > input {
+  width: 80px;
+}
